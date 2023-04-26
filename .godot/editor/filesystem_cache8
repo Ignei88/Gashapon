@@ -1,0 +1,12 @@
+2a60927148abd1d33b818b535e306557
+::res://::1682520573
+icon.svg::CompressedTexture2D::5195199128592263294::1682471138::1682471188::1::::<><>::
+::res://esc/::1682491285
+gacha.tscn::PackedScene::8827836142286973307::1682491285::0::1::::<><>::res://esc/main_gacha.gd<>uid://wtkcij371qem<>uid://dqui6l5qc2ipi<>uid://br42be85jc310<>uid://cyc4v54b6xagn
+main_gacha.gd::GDScript::-1::1682490774::0::1::::<>Node2D<>::
+::res://img/::1682482286
+spr_Gachapon.png::CompressedTexture2D::1583988914285358692::1682471598::1682471598::1::::<><>::
+spr_palanca.png::CompressedTexture2D::8324112824753894814::1682475392::1682475393::1::::<><>::
+::res://sfx/::1682484177
+sfx-pop.mp3::AudioStreamMP3::3641139387453132445::1682482544::1682482547::1::::<><>::
+sfx_maquina.mp3::AudioStreamMP3::6463302285256927585::1682484169::1682484177::1::::<><>::

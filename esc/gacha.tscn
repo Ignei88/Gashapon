@@ -1,0 +1,59 @@
+[gd_scene load_steps=7 format=3 uid="uid://dx1jf3iwilf3x"]
+
+[ext_resource type="Script" path="res://esc/main_gacha.gd" id="1_aio8f"]
+[ext_resource type="Texture2D" uid="uid://wtkcij371qem" path="res://img/spr_Gachapon.png" id="1_pg6vw"]
+[ext_resource type="Texture2D" uid="uid://dqui6l5qc2ipi" path="res://img/spr_palanca.png" id="2_ew7ij"]
+[ext_resource type="AudioStream" uid="uid://br42be85jc310" path="res://sfx/sfx-pop.mp3" id="4_6iccj"]
+[ext_resource type="AudioStream" uid="uid://cyc4v54b6xagn" path="res://sfx/sfx_maquina.mp3" id="5_lovp5"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_0pwfj"]
+font_size = 100
+
+[node name="Gacha" type="Node2D"]
+script = ExtResource("1_aio8f")
+
+[node name="Spr_Gachapon" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(749, 416)
+scale = Vector2(3.5, 3.5)
+texture = ExtResource("1_pg6vw")
+offset = Vector2(-4.28571, -15.1429)
+
+[node name="Spr_palanca" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(746, 441)
+scale = Vector2(2.46875, 1.53125)
+texture = ExtResource("2_ew7ij")
+offset = Vector2(0.40506, -0.653076)
+
+[node name="Sfx_pop" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_6iccj")
+
+[node name="Sfx_maquina" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_lovp5")
+
+[node name="Btn_palanca" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_left = 723.0
+offset_top = 430.0
+offset_right = 769.0
+offset_bottom = 459.0
+pivot_offset = Vector2(23, 12)
+flat = true
+
+[node name="Lbl_Premio" type="Label" parent="."]
+offset_left = 79.0
+offset_top = 100.0
+offset_right = 261.0
+offset_bottom = 240.0
+theme_override_font_sizes/font_size = 1
+label_settings = SubResource("LabelSettings_0pwfj")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 1024.0
+offset_top = 614.0
+offset_right = 1144.0
+offset_bottom = 640.0
+text = "By Ignel"
+
+[connection signal="pressed" from="Btn_palanca" to="." method="_on_btn_palanca_pressed"]
