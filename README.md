@@ -1,2 +1,2 @@
 # Gashapon
- Gashapon simple echo en godot
+ Gashapon simple hecho en godot
